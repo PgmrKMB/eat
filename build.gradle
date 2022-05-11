@@ -35,3 +35,10 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+apply plugin : 'war'
+bootWar {
+	archiveBaseName = 'application'
+	archiveFileName = 'application.war'
+
+}
